@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noltrax Match</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="match-body">
+
+  <div class="side-text">NOLTRAX MATCH</div>
+
+  <div class="match-wrap">
+
+    <div class="top-inputs">
+      <input type="text" id="matchName" placeholder="Match name">
+      <input type="date" id="matchDate">
+      <input type="text" id="homeName" placeholder="Home Team">
+      <input type="text" id="awayName" placeholder="Away Team">
+    </div>
+
+    <div class="match-table-card">
+      <table id="statsTable">
+        <thead>
+          <tr>
+            <th>Action</th>
+            <th>Home</th>
+            <th>Away</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Pass</td><td class="home" data-row="0">0</td><td class="away" data-row="0">0</td></tr>
+          <tr><td>Shoot</td><td class="home" data-row="1">0</td><td class="away" data-row="1">0</td></tr>
+          <tr><td>Tackle</td><td class="home" data-row="2">0</td><td class="away" data-row="2">0</td></tr>
+          <tr><td>Foul</td><td class="home" data-row="3">0</td><td class="away" data-row="3">0</td></tr>
+          <tr><td>Corner</td><td class="home" data-row="4">0</td><td class="away" data-row="4">0</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="live-pos-box">
+      Live Ball Possession: <span id="livePossession">0% - 0%</span>
+    </div>
+
+    <div class="stopwatch mini">
+      <div id="homeTime">00:00</div>
+      <div id="awayTime">00:00</div>
+    </div>
+
+    <div class="controls">
+      <button id="saveBtn" class="primary">Save</button>
+      <button id="resetBtn">Reset</button>
+      <a href="index.html" class="home-back">Home</a>
+    </div>
+
+    <div class="final-possession" id="finalPossession"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
